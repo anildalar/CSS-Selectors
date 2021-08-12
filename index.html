@@ -67,6 +67,27 @@
             *{
                 border:10px solid #000;
             }
+            /*
+                6.Group/Combinational Selector Syntax ,
+
+                element1,element2,element3....{
+                    property:value;
+                }
+            */
+            div,span#a1,span.b1,a[href="https://oklabs.in"]{
+                display: inline-block;
+            }
+             /*
+                7.CSS Pesudo Element Selector ::
+
+                element::selector{
+                    property:value;
+                }
+            */
+            
+            h1::after{
+                content: url('https://1.bp.blogspot.com/-Cn01291Hy9w/WLuhGT70iBI/AAAAAAAAVBY/4vDEYJKBWOYcBsmCEjhEfZ5m9TSHaaT-gCLcB/s1600/dreamer-emoji.gif');
+            }
         </style>
     </head>
     <body>
@@ -74,5 +95,6 @@
         <span id="a1">CSS Id Selector.  #</span>
         <span class="b1">CSS Class Selector</span>
         <a href="https://oklabs.in">CSS Attribute Selector </a>
+        <h1>CSS Pesudo Element Selector ::</h1>
     </body>
 </html>
